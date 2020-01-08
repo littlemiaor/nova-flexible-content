@@ -341,6 +341,7 @@ class Flexible extends Field
         if(!$value) return;
 
         if(!is_array($value)) {
+            return;
             throw new \Exception("Unable to parse incoming Flexible content, data should be an array.");
         }
 
